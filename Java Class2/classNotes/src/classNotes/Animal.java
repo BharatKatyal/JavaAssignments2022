@@ -1,0 +1,37 @@
+package classNotes;
+
+public abstract class Animal {
+	private double weight;
+
+	public Animal(double weight) {
+		super();
+		this.weight = weight;
+	}
+
+	
+	
+	
+	public double getWeight() {
+		return weight;
+	}
+
+
+
+
+	public void setWeight(double weight) {
+		this.weight = weight;
+	}
+
+
+
+
+	@Override
+	public String toString() {
+		String result = "---------------------------\n";
+		result += "I am an animal weighing " + weight + ".\n";
+		return result;
+	}
+	
+	public abstract void makesSound();
+	
+}

@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class Age {
+	 public int printAge() {
+		try {
+			Scanner sc = new Scanner(System.in);
+			System.out.println("what is your Age as an integrer");
+			int myAge=sc.nextInt();
+			return myAge;
+		}
+		catch(InputMismatchException e) {
+			System.out.println("numbers only");
+
+		}
+		 
+		
+
+	} // close printAge
+
+} // close public class Agew
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,44 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		String usersName;
+		int usersAge;
+		
+		usersName = Name();
+		usersAge = Age();
+		
+		
+		System.out.println("what is your age" + usersName + "you are "+usersAge);
+
+//		System.out.println("what is your age");
+//		int myAge=sc.nextInt();
+//		
+//		Age(myAge);
+		
+//		Output(myName,myAge);
+	}
+	
+	public static String Name() {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("what is your name");
+		String myName=sc.nextLine();
+		return myName;
+	}
+	static int Age() {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("what is your Age");
+		int z=sc.nextInt();
+		return z;
+	}
+	
+	static void Output(String x, int y) {
+		System.out.println("Hello"+ x+ "you are "+y +"years old");
+	}
+
+}
+
+

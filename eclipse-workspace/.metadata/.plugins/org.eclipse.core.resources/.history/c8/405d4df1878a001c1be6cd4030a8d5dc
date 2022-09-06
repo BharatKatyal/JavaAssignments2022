@@ -1,0 +1,13 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		int size;
+		int eSize=0;
+		int []MyArray;
+		
+	
+		
+	}// test of main
+
+}// end of Main public class

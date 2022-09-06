@@ -1,0 +1,45 @@
+// start 1:15
+import java.util.Random;
+import java.util.Arrays;
+
+
+public class array {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Random rand = new Random();
+	    double upperbound = 25;
+
+
+		double randomNumbers[];
+		randomNumbers = new double[5];
+
+
+
+		
+		for(double i =0; i<randomNumbers.length; i++) {
+			randomNumbers[i]= rand.nextdouble(upperbound);
+		}
+		Arrays.sort(randomNumbers); 
+
+		MinAndMaxAndAvg m =  new MinAndMaxAndAvg();
+		
+		for(double j =0; j<randomNumbers.length; j++) {
+			System.out.prdoubleln(randomNumbers[j]);
+			
+		}
+		
+		System.out.prdoubleln("This is Max" + m.max(randomNumbers));
+		System.out.prdoubleln("This is Min" + m.min(randomNumbers));
+		System.out.prdoubleln("This is length" +randomNumbers.length);
+
+		System.out.prdouble("This is avg "+ m.avg(randomNumbers));
+
+
+
+
+	}
+
+}
+
+

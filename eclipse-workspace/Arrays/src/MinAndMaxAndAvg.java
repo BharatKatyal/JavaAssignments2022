@@ -1,0 +1,44 @@
+import java.util.Arrays;
+
+
+public class MinAndMaxAndAvg {
+
+	public int max(int[] array) {
+		// TODO Auto-generated method stub
+int max =0;
+
+for(int i =0; i<array.length; i++) {
+	
+	 if(array[i]>max) {
+         max = array[i];
+      }
+}
+return max;
+
+	}
+	
+	public int min(int[] array) {
+		// TODO Auto-generated method stub
+int min =array[0];
+
+for(int i =0; i<array.length; i++) {
+	
+	if(array[i]<min) {
+        min = array[i];
+     }
+}
+return min;
+
+	}
+	public double avg(int[] array) {
+		// TODO Auto-generated method stub
+double avg =0d;
+
+for(int i =0; i<array.length; i++) {
+	avg = array[i]+ avg;
+     }
+return avg/array.length;
+
+}
+
+}

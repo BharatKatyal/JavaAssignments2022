@@ -1,0 +1,46 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		String usersName;
+		int usersAge;
+		String repeat = "no";
+		
+		do  {
+				usersName = Name();
+				Age usersAge1 =  new Age();
+				usersAge = usersAge1.printAge();
+				Output(usersName,usersAge);
+				System.out.println("Would you like to repeat, write yes ");
+				repeat=sc.next();
+				System.out.println(repeat);
+
+		} while(repeat == "yes");
+		
+		
+	}
+	
+	public static String Name() {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("what is your full name");
+		String myName=sc.nextLine();
+		return myName;
+	}// close String Name method
+
+	
+	static void Output(String x, int y) {
+		if(y>50) {
+			System.out.println("Hello"+ x+ "since you are "+y +"years old you are really old");
+		}else if(y<21) {
+			System.out.println("Hello"+ x+ "since you are "+y +"years old you are really young");
+		}else {
+			System.out.println("Hello"+ x+ "since you are "+y +"years old you are doing just fine");	
+		}
+	} // Close Output Method
+
+}// Close Main
+
+

@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class Age {
+	
+	public static void AgeString() {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		System.out.println("what is your age");
+		int myAge=sc.nextInt();
+		
+		System.out.println("You are  "+ myAge +"years old");
+		
+	}
+
+
+}
+

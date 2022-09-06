@@ -1,0 +1,9 @@
+import java.util.Scanner;
+
+public class Age {
+	Scanner sc = new Scanner(System.in);
+	System.out.println("what is your Age as an integrer");
+	int myAge=sc.nextInt();
+	return myAge;
+}
+

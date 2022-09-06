@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+ class Age {
+	 static int main(String[] args) {
+//		Scanner sc = new Scanner(System.in);
+//		System.out.println("what is your Age as an integrer");
+//		int myAge=sc.nextInt();
+//		return myAge;
+		 return 11;
+	}
+
+}
+
